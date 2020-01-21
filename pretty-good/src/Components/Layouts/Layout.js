@@ -5,23 +5,19 @@ import './Layouts.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
-const bodyStyle = {
-    
-        backgroundImage: 'linear-gradient( to right, #141e30, #243b55,)',
-    
-  };
-
 const Layout = ( props ) => (    
 <Aux>
-    <body style={bodyStyle}>
-        <div>Navbar, Stuff, Backdrop</div>
+     <div>
+     <FontAwesomeIcon icon="coffee" />
+     </div>
         <main>
              {props.children}
              <ImageAvatar></ImageAvatar>
+             <center>
              <h1>Hi, I'm Phil.</h1>
+             </center>
            
         </main>
-    </body>
 </Aux>
     
 );
