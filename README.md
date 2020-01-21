@@ -1,2 +1,4 @@
 # pretty-good
-Newly acquired site>:)
+
+Built with React.
+Hosted With Netlifly.
