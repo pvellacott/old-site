@@ -2,7 +2,7 @@
   "name": "pretty-good",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pvellacott.github.io/pretty-good/tree/master/pretty-good/",
+  "homepage": "https://pvellacott.github.io/pretty-good/",
   "dependencies": {
     "@babel/core": "7.7.4",
     "@fortawesome/fontawesome-free": "^5.12.0",
