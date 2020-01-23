@@ -1,5 +1,4 @@
-# pretty-good
-
+# vellacott.github.io
 Built with React.
-Hosted gh pages.
+Hosted with gh pages.
 
