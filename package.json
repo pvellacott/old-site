@@ -2,7 +2,7 @@
   "name": "pretty-good",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pvellacott.github.io/pretty-good/",
+  "homepage": "https://phil.vellacott.me/",
   "dependencies": {
     "@babel/core": "7.7.4",
     "@fortawesome/fontawesome-free": "^5.12.0",
@@ -74,7 +74,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
