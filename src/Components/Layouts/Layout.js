@@ -5,6 +5,8 @@ import './Layouts.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faSpotify, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
+import SimpleExpansionPanel from '../Contact'
+
 const spaces = {
     marginRight: '10px',
     color: 'black',
@@ -34,6 +36,7 @@ const Layout = ( props ) => (
                 </center>
              <center>
                  <h1>Hi, I'm Phil.</h1>
+                 <SimpleExpansionPanel></SimpleExpansionPanel>
              </center>
            
         </main>

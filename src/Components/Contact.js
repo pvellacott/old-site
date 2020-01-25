@@ -5,6 +5,7 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { css } from '@emotion/core'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -20,7 +21,12 @@ export default function SimpleExpansionPanel() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root}
+      css={css`
+      width: 50%;
+      
+    `}
+    >
       <ExpansionPanel>
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
@@ -35,6 +41,7 @@ export default function SimpleExpansionPanel() {
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
+    </div>
  
   );
 }

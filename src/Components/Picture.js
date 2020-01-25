@@ -2,6 +2,11 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar'; 
 import photo from './Images/mustashe.jpg';
+import { css } from '@emotion/core'
+
+const style = css`
+box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+`
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -27,7 +32,7 @@ export default function ImageAvatar() {
 
   return (
     <div className={classes.root}>
-      <Avatar alt="Phil Vellacott" src={photo} className={classes.large} />
+      <Avatar css={ style } alt="Phil Vellacott" src={photo} className={classes.large} />
     </div>
   );
 }
