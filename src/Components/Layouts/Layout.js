@@ -2,8 +2,8 @@ import React from 'react';
 import Aux from '../../hoc/Aux';
 import ImageAvatar from '../Picture';
 import './Layouts.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faSpotify, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { Global, css } from '@emotion/core'
+
 
 import SimpleExpansionPanel from '../Contact'
 
@@ -23,23 +23,18 @@ const TWIT_URL = "https://twitter.com/phil_vellacott"
 
 const Layout = ( props ) => (    
 <Aux>
-
+    <div className="container">
         <main>
              {props.children}
-                <ImageAvatar></ImageAvatar>
-                <center>
-                    <div className="iconz">
-                            <a href={WEB_URL}><FontAwesomeIcon icon={ faGithub } size="lg" style={ spaces } /></a>
-                            <a href={SPOT_URL}><FontAwesomeIcon icon={ faSpotify } size="lg" style={ spaces } /></a>
-                            <a href={TWIT_URL}><FontAwesomeIcon icon={ faTwitter } size="lg" style={ iconB } /></a>
-                    </div>
-                </center>
-             <center>
-                 <h1>Hi, I'm Phil.</h1>
-                 <SimpleExpansionPanel></SimpleExpansionPanel>
-             </center>
-           
+
+                 <h1 css={css` font-size: 1.8em; margin-top: 60px; `}>Hi,</h1>
+                 <h1 css={css` font-size: 2.8em; `}> I'm Phil.</h1>
+                 <h4>Front-end developer. Montreal, Quebec.</h4>
+                
+             
         </main>
+        <footer> </footer>   
+    </div>
 </Aux>
     
 );

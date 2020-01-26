@@ -6,9 +6,22 @@ body {
 h1 {
     color: black;
 }
+
+.container {
+    width: 1000px;
+    margin: auto;
+}
+
 .iconz {
     margin-top: 10px;
     text-decoration: none;
     color: black;
     margin-right: 10px;
+}
+h1,
+h2,
+h4,
+p {
+  margin: 0;
+  padding: 0;
 }

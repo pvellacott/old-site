@@ -22,10 +22,7 @@ export default function SimpleExpansionPanel() {
 
   return (
     <div className={classes.root}
-      css={css`
-      width: 50%;
-      
-    `}
+      css={css` width: 225px; `}
     >
       <ExpansionPanel>
         <ExpansionPanelSummary
@@ -33,7 +30,11 @@ export default function SimpleExpansionPanel() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className={classes.heading}>Contact me</Typography>
+          <Typography className={classes.heading} 
+          css={css`
+            margin-left: 45px;`}>
+              Contact me
+          </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
