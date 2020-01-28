@@ -19,18 +19,19 @@ export default function Navbar() {
     return (
         <div>
         <div style={ style }>
-            <p css={css`  
-              '&:hover:after' : {
+            <a css={css`  
+            color: blue;
+              &:hover:before: {
                 width: 100%;
-                background: transparent;
-                transition: all 0s ease;
+                background: #75ebb6;
+                transition: width 0.5s ease;
               }
-             '&:hover:after': {
-            width: 100%;
-            background: transparent;
-            transition: all 0s ease;
-            }
-            '&:before' : {
+              &:hover:after: {
+                 width: 100%;
+                 background: transparent;
+                 transition: all 0s ease;
+               }
+              &:before : {
                 content: "";
                 display: block;
                 position: absolute;
@@ -40,7 +41,7 @@ export default function Navbar() {
                 width: 0;
                 transition: width 0s ease, background 0.5s ease;
               }
-              '&:after' : {
+              &:after : {
                 content: "";
                 display: block;
                 position: absolute;
@@ -52,7 +53,7 @@ export default function Navbar() {
                 transition: width 0.5s ease;
               }
              `}>
-          About</p>
+          About</a>
         </div>
         <div style={ style }>
             <p>Projects</p>
