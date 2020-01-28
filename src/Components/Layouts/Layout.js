@@ -31,7 +31,7 @@ const Layout = ( props ) => (
         <main>
              {props.children}
 
-                 <h1 css={css` font-size: 2.1em; margin-top: 100px; `}>Hi,</h1>
+                 <h1 css={css` font-size: 2.1em; margin-top: 250px; `}>Hi,</h1>
                  <h1 css={css` font-size: 3.1em; `}> I'm Phil.</h1>
                  <h4>Front-end developer. Montreal Quebec.</h4>
                  <div className="iconz">
