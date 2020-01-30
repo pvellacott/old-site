@@ -30,7 +30,7 @@ const Layout = ( props ) => (
     <div className="container">
         <main>
              {props.children}
-
+             <Navbar></Navbar>
                  <h1 css={css` font-size: 2.1em; margin-top: 250px; `}>Hi,</h1>
                  <h1 css={css` font-size: 3.1em; `}> I'm Phil.</h1>
                  <h4>Front-end developer. Montreal Quebec.</h4>
@@ -40,9 +40,7 @@ const Layout = ( props ) => (
                         <a href={SPOT_URL}><FontAwesomeIcon icon={ faSpotify } size="md" style={ spaces } /></a>
                         <a href={TWIT_URL}><FontAwesomeIcon icon={ faTwitter } size="md" style={ iconB } /></a>
                   </div>
-                 <Navbar></Navbar>
-                
-             
+            
         </main>
         <Footer> </Footer>   
     </div>

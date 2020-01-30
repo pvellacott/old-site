@@ -7,10 +7,11 @@ var style = {
     float: "right",
     position: "relative",
     display: "inline-block",
-    top: "-300px",
+    top: "-120px",
     marginRight: "40px",
     fontWeight: "bold",
     fontSize: "1.4em",
+    overFlow: "none"
     
 }
 
@@ -61,11 +62,13 @@ export default function Navbar() {
               width: 100%;
               background: #75ebb6;
               transition: width 0.5s ease;
+              z-index: -1;
             }
             a:hover:after {
                width: 100%;
                background: transparent;
                transition: all 0s ease;
+               z-index: -1;
              }
             a:before {
               content: "";
@@ -76,6 +79,7 @@ export default function Navbar() {
               height: 3px;
               width: 0;
               transition: width 0s ease, background 0.5s ease;
+              z-index: -1;
             }
             a:after {
               content: "";
@@ -87,6 +91,7 @@ export default function Navbar() {
               width: 0;
               background: #75ebb6;
               transition: width 0.5s ease;
+              z-index: -1;
             }
            `} style={ style }>
             <a>Projects</a>
