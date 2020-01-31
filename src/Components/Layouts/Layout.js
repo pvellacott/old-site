@@ -8,7 +8,7 @@ import ImageAvatar from '../Picture';
 import Navbar from '../Navbar';
 import SimpleExpansionPanel from '../Contact'
 import Footer from '../Footer';
-
+import Wave from 'react-wavify'
 
 const spaces = {
     marginRight: '10px',
@@ -40,10 +40,18 @@ const Layout = ( props ) => (
                         <a href={SPOT_URL}><FontAwesomeIcon icon={ faSpotify } size="md" style={ spaces } /></a>
                         <a href={TWIT_URL}><FontAwesomeIcon icon={ faTwitter } size="md" style={ iconB } /></a>
                   </div>
-            
+                
+                <br></br>
+                <center>
+                <p css={css` font-size: 1.2em; margin-top: 200px;`}>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p>
+                </center>
+
         </main>
-        <Footer> </Footer>   
+       
+        
+        
     </div>
+    <Footer></Footer>
 </Aux>
     
 );

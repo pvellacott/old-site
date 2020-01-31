@@ -20,7 +20,9 @@ export default function Navbar() {
     return (
         <div>
         <div css={css`  
-            
+            a:hover {
+              cursor:pointer
+            }
             a:hover:before {
               width: 100%;
               background: #75ebb6;
@@ -57,7 +59,9 @@ export default function Navbar() {
           About</a>
         </div>
         <div css={css`  
-            
+            a:hover {
+            cursor:pointer
+                    }
             a:hover:before {
               width: 100%;
               background: #75ebb6;
