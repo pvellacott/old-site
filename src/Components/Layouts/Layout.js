@@ -42,9 +42,9 @@ const Layout = ( props ) => (
                   </div>
                 
                 <br></br>
-                <center>
+                {/*<center>
                 <p css={css` font-size: 1.2em; margin-top: 200px;`}>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p>
-                </center>
+                </center>*/}
 
         </main>
        
