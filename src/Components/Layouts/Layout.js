@@ -10,6 +10,7 @@ import SimpleExpansionPanel from '../Contact'
 import Footer from '../Footer';
 import Wave from 'react-wavify';
 import Header from '../Header';
+import AboutMe from '../About';
 
 const spaces = {
     marginRight: '10px',
@@ -43,6 +44,7 @@ const Layout = ( props ) => (
                   </div>
                
                 <br></br>
+                <AboutMe></AboutMe>
                 {/*<center>
                 <p css={css` font-size: 1.2em; margin-top: 200px;`}>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p>
                 </center>*/}

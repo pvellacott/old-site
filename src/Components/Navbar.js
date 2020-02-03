@@ -11,7 +11,8 @@ var style = {
     marginRight: "40px",
     fontWeight: "bold",
     fontSize: "1.4em",
-    overFlow: "none"
+    overFlow: "none",
+    
     
 }
 
@@ -97,8 +98,17 @@ export default function Navbar() {
               transition: width 0.5s ease;
               z-index: -1;
             }
+            a:visited {
+              color: black;
+            }
+            a:active {
+              color: black;
+            }
+            a {
+              text-decoration: none; 
+            }
            `} style={ style }>
-            <a>Projects</a>
+            <a href="https://github.com/pvellacott">Projects</a>
         </div>
         </div>
     );
