@@ -36,7 +36,7 @@ export default function Footer() {
         <footer css={ style }>
           <div css={ center }>
             <div css={ text }>
-              <p>Phil Vellacott 2020 | Buit with 🖥️ Computer.</p>
+              <p>Phil Vellacott 2020 | Built with 🖥️ Computer.</p>
             </div>
           </div>
           <Wave fill='#ff4c4c'

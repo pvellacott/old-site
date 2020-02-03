@@ -8,7 +8,8 @@ import ImageAvatar from '../Picture';
 import Navbar from '../Navbar';
 import SimpleExpansionPanel from '../Contact'
 import Footer from '../Footer';
-import Wave from 'react-wavify'
+import Wave from 'react-wavify';
+import Header from '../Header';
 
 const spaces = {
     marginRight: '10px',
@@ -32,7 +33,7 @@ const Layout = ( props ) => (
              {props.children}
              <Navbar></Navbar>
                  <h1 css={css` font-size: 2.1em; margin-top: 250px; `}>Hi,</h1>
-                 <h1 css={css` font-size: 3.1em; `}> I'm Phil.</h1>
+                 <Header></Header>
                  <h4>Front-end developer. Montreal Quebec.</h4>
                  <div className="iconz">
         
@@ -40,12 +41,14 @@ const Layout = ( props ) => (
                         <a href={SPOT_URL}><FontAwesomeIcon icon={ faSpotify } size="md" style={ spaces } /></a>
                         <a href={TWIT_URL}><FontAwesomeIcon icon={ faTwitter } size="md" style={ iconB } /></a>
                   </div>
-                
+               
                 <br></br>
                 {/*<center>
                 <p css={css` font-size: 1.2em; margin-top: 200px;`}>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p>
                 </center>*/}
-
+                <center>
+                    <h2 css={css`margin-top: 250px; `}><span css={css` color: #75ebb6; `}>~</span> About <span css={css` color: #75ebb6; `}>~</span></h2>
+                </center>
         </main>
        
         
