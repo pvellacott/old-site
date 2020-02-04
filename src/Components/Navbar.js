@@ -7,7 +7,7 @@ var style = {
     float: "right",
     position: "relative",
     display: "inline-block",
-    top: "-120px",
+    top: "-160px",
     marginRight: "40px",
     fontWeight: "bold",
     fontSize: "1.4em",
@@ -26,7 +26,7 @@ export default function Navbar() {
             }
             a:hover:before {
               width: 100%;
-              background: #75ebb6;
+              background: #ffa458;
               transition: width 0.5s ease;
             }
             a:hover:after {
@@ -52,8 +52,18 @@ export default function Navbar() {
               bottom: 0;
               height: 3px;
               width: 0;
-              background: #75ebb6;
+              background: #ffa458;
               transition: width 0.5s ease;
+            }
+            a:visited {
+              color: #e9e9e9;
+            }
+            a:active {
+              color: #e9e9e9;
+            }
+            a {
+              text-decoration: none; 
+              color: #e9e9e9;
             }
            `} style={ style }>
             <a>
@@ -65,7 +75,7 @@ export default function Navbar() {
                     }
             a:hover:before {
               width: 100%;
-              background: #75ebb6;
+              background: #ffa458;
               transition: width 0.5s ease;
               z-index: -1;
             }
@@ -94,18 +104,19 @@ export default function Navbar() {
               bottom: 0;
               height: 3px;
               width: 0;
-              background: #75ebb6;
+              background: #ffa458;
               transition: width 0.5s ease;
               z-index: -1;
             }
             a:visited {
-              color: black;
+              color: #e9e9e9;
             }
             a:active {
-              color: black;
+              color: #e9e9e9;
             }
             a {
               text-decoration: none; 
+              color: #e9e9e9;
             }
            `} style={ style }>
             <a href="https://github.com/pvellacott">Projects</a>

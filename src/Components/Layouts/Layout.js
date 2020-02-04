@@ -14,11 +14,12 @@ import AboutMe from '../About';
 
 const spaces = {
     marginRight: '10px',
-    color: 'black',
+    color: '#e9e9e9',
 }
 
 const iconB = {
-    color: 'black',
+    color: '#e9e9e9',
+    
 }
 
 
@@ -44,7 +45,14 @@ const Layout = ( props ) => (
                   </div>
                
                 <br></br>
+
+            <div className="aboutCard">
+                <center>
+                    <h2>Hi, again..</h2>
+                </center>
                 <AboutMe></AboutMe>
+            </div>
+            
                 {/*<center>
                 <p css={css` font-size: 1.2em; margin-top: 200px;`}>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p>
                 </center>*/}
@@ -54,9 +62,6 @@ const Layout = ( props ) => (
                 </center>
                 */}
         </main>
-       
-        
-        
     </div>
     <Footer></Footer>
 </Aux>

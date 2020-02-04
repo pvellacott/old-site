@@ -39,7 +39,7 @@ export default function Footer() {
               <p>Phil Vellacott 2020 | Built with 🖥️ Computer.</p>
             </div>
           </div>
-          <Wave fill='#ff4c4c'
+          <Wave fill='#333333'
             options={{
               height: 10,
               amplitude: 20,
