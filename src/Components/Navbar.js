@@ -1,6 +1,11 @@
 import React from 'react';
 import { Global, css } from '@emotion/core'
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 
 var style = {
@@ -19,6 +24,7 @@ var style = {
 
 export default function Navbar() {
     return (
+      <nav>
         <div>
         <div css={css`  
             a:hover {
@@ -122,5 +128,6 @@ export default function Navbar() {
             <a href="https://github.com/pvellacott">Projects</a>
         </div>
         </div>
+      </nav>
     );
  }
