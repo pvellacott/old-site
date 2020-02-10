@@ -15,7 +15,7 @@ export default function AboutMe() {
 
              <p css={css` margin-left: 40px; margin-right: 10px; float:left; `}>Nice to meet you. Want to </p>
                 <Typed
-                    strings={['^1000 know more about me? ^1000', '^1000 see what Im intersted in? ^1000', '^1000 get my adress so we can meet up and have me obliterate you in Super Smash Bros. Melee? ^1000', '^1000 chat? ^1000' ]}
+                    strings={['^1000 know more about me? ^1000', '^1000 see what Im intersted in? ^1000', '^1000 meet up so I can beat you in Super Smash Bros. Melee? ^1000', '^1000 chat? ^1000' ]}
                     typeSpeed={40}
                     backSpeed={50}
                     loop
