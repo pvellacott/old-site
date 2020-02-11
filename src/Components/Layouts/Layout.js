@@ -55,7 +55,7 @@ const Routing = ( props ) => (
 
 const Home = () => 
   <div>
-    <h1  css={css` font-size: 2.1em; margin-top: 250px; `}>Hi,</h1>
+    <h1  css={css` font-size: 2.1em; margin-top: 120px; `}>Hi,</h1>
     <Header />
     <h4>Front-end developer. Montreal Quebec.</h4>
     <div className="iconz">
@@ -68,7 +68,7 @@ const Home = () =>
 
 
  function About() {
-    return <h2>About</h2>;
+    return <h2>More to come! WIP</h2>;
   }
 
 
