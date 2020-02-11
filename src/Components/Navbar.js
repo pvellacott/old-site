@@ -9,23 +9,22 @@ import {
 
 
 var style = {
-    float: "right",
-    position: "relative",
-    display: "inline-block",
-    top: "-160px",
+
+    display: "flex",
     marginRight: "40px",
     fontWeight: "bold",
     fontSize: "1.4em",
     overFlow: "none",
-    
-    
+    justifyContent: "flex-end",
+    marginTop: "50px",
+
 }
 
 
 export default function Navbar() {
     return (
       <nav>
-        <div>
+        <div style={ style }>
         <div css={css`  
             a:hover {
               cursor:pointer
@@ -71,9 +70,8 @@ export default function Navbar() {
               text-decoration: none; 
               color: #e9e9e9;
             }
-           `} style={ style }>
-            <a>
-          About</a>
+           `} >
+            <a css={css` padding: 15px; `}>About</a>
         </div>
         <div css={css`  
             a:hover {
@@ -124,8 +122,8 @@ export default function Navbar() {
               text-decoration: none; 
               color: #e9e9e9;
             }
-           `} style={ style }>
-            <a href="https://github.com/pvellacott">Projects</a>
+           `}>
+            <a css={css` padding: 15px; `} href="https://github.com/pvellacott">Projects</a>
         </div>
         </div>
       </nav>
