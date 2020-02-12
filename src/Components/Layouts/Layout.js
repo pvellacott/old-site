@@ -5,12 +5,12 @@ import { faGithub, faSpotify } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './Layouts.css';
-import ImageAvatar from '../Picture';
 import Navbar from '../Navbar';
 import SimpleExpansionPanel from '../Contact'
 import Footer from '../Footer';
 import Wave from 'react-wavify';
 import Header from '../Header';
+import photo from '../Images/paris.jpg';
 
 
 const spaces = {
@@ -67,9 +67,18 @@ const Home = () =>
   
 
 
- function About() {
-    return <h2>More to come! WIP</h2>;
-  }
+ const About = () =>
+    <div css={css`margin-top: 30px;`}>
+      <center>
+        <img css={css` width: 240px; height: 320px; border-radius: 10px `} src={photo} />
+        <p css={css`margin-top: 30px;`}><span css={css`font-size: 11px;`}>*Shakes your hand <span css={css`font-style: italic;`}>very</span> firmly*</span> My name is <span css={css`color: #ffa458; ;`}> Phil Vellacott</span> & I'm a Front-end Web developer based in Montreal, QB.</p>
+        <p css={css`margin-top: 30px;`}>Spending most of my time doing frontend web design.</p>
+        <p css={css`margin-top: 30px;`}>Love for all Web Technologies & learning new things to build better newer things.</p>
+        <p css={css`margin-top: 30px;`}>Checkout my latest projects on <a css={css`color: #ffa458;; border: none;text-decoration: none; cursor: pointer; &:visited {color: #e9e9e9;}`} href='https://github.com/pvellacott'>Github</a> or if you'd like to get in contact with me reach me by <a css={css`color: #ffa458;; border: none;text-decoration: none; cursor: pointer; &:visited {color: #e9e9e9;}`} href='mailto:vellacott.phil@gmail.com'>Email</a>.</p>
+      </center>
+      
+    </div>
+  
 
 
 
