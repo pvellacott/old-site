@@ -11,6 +11,7 @@ import Footer from '../Footer';
 import Wave from 'react-wavify';
 import Header from '../Header';
 import photo from '../Images/paris.jpg';
+import HomeButton from '../HomeButton';
 
 
 const spaces = {
@@ -42,6 +43,11 @@ const Routing = ( props ) => (
             <Route path="/about">
               <Layout>
                 <About />
+              </Layout>
+            </Route>
+            <Route path="/projects">
+              <Layout>
+                <Projects />
               </Layout>
             </Route>
             <Route path="/">
@@ -81,7 +87,7 @@ const Home = () =>
 
 const Projects = () =>
 <div css={css`margin-top: 30px;`}>
-  
+  <HomeButton />
 </div>
   
 
