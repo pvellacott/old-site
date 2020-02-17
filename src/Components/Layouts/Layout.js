@@ -29,7 +29,6 @@ const TWIT_URL = "mailto:vellacott.phil@gmail.com"
 
 const Layout = ( props ) => (
   <div className="container">
-   <Navbar />
     <main>
       { props.children }
     </main>
@@ -61,6 +60,7 @@ const Routing = ( props ) => (
 
 const Home = () => 
   <div>
+    <Navbar />
     <h1  css={css` font-size: 2.1em; margin-top: 120px; `}>Hi,</h1>
     <Header />
     <h4>Front-end developer. Montreal Quebec.</h4>
@@ -74,6 +74,8 @@ const Home = () =>
 
 
  const About = () =>
+  <div>
+   <Navbar />
     <div css={css`margin-top: 30px;`}>
       <center>
         <img css={css` width: 240px; height: 320px; border-radius: 10px `} src={photo} />
@@ -82,14 +84,19 @@ const Home = () =>
         <p css={css`margin-top: 30px;`}>Love for all Web Technologies & learning new things to build better newer things.</p>
         <p css={css`margin-top: 30px;`}>Checkout my latest projects on <a css={css`color: #ffa458; border: none;text-decoration: none; cursor: pointer; &:visited {color:#ffa458;}`} href='https://github.com/pvellacott'>Github</a> or if you'd like to get in contact with me reach me by <a css={css`color: #ffa458; border: none;text-decoration: none; cursor: pointer; &:visited {color: #ffa458;}`} href='mailto:vellacott.phil@gmail.com'>Email</a>.</p>
       </center>
-      
     </div>
+  </div>
 
 const Projects = () =>
-<div css={css`margin-top: 30px;`}>
-  <HomeButton />
-</div>
-  
+<div>
+  <div >
+  <Navbar><HomeButton /></Navbar>
+  </div>
+    <div css={css`margin-top: 100px;`}>
+      <p>Projefsts here lasfonasfkol</p>
+      
+    </div>
+</div>  
 
 
 

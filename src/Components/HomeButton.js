@@ -1,24 +1,21 @@
-import React, { Component } from "react"
-import { Global, css } from '@emotion/core'
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import React, { Component } from "react";
+import { css } from '@emotion/core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
-const style = theme => css`
+const style = css`
 
-border: solid #4495d0 3px;
-border-radius: 8px;
-display: inline-block;
-font-size: 15px;
-color: #4495d0;
-padding: 5px 10px;
-background: white;
+font-size: 1.3em;
+color: #e9e9e9;
 font-weight: bold;
+padding: 20px;
 
 `
 
 export default function HomeButton() {
     return (
         <div css={ style }>
-            <faChevronLeft /><a>Home</a>
+            <FontAwesomeIcon icon={ faChevronLeft } size="sm" /><a href='/'> Back</a>
         </div>
     )
  }
