@@ -75,7 +75,9 @@ const Home = () =>
 
  const About = () =>
   <div>
-   <Navbar />
+  <div >
+  <Navbar><HomeButton /></Navbar>
+  </div>
     <div css={css`margin-top: 30px;`}>
       <center>
         <img css={css` width: 240px; height: 320px; border-radius: 10px `} src={photo} />
