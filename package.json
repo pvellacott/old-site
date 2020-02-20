@@ -79,7 +79,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "build": "node scripts/build.js && cp build/index.html build/about.html",
     "test": "node scripts/test.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build"

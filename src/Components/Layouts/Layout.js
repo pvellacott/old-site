@@ -39,17 +39,17 @@ const Layout = ( props ) => (
 const Routing = ( props ) => (    
     <Router>
         <Switch>
-            <Route path={process.env.PUBLIC_URL + '/about'}>
+            <Route path="/about">
               <Layout>
                 <About />
               </Layout>
             </Route>
-            <Route path={process.env.PUBLIC_URL + '/projects'}>
+            <Route path="/projects">
               <Layout>
                 <Projects />
               </Layout>
             </Route>
-            <Route path={process.env.PUBLIC_URL + '/'}>
+            <Route path="/">
               <Layout>
                 <Home />
               </Layout>
