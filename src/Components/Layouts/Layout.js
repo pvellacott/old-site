@@ -96,6 +96,9 @@ const Projects = () =>
   </div>
     <div css={css`margin-top: 100px;`}>
       <p>Projefsts here lasfonasfkol</p>
+      <center>
+        <SimpleExpansionPanel />
+      </center>
       
     </div>
 </div>  
